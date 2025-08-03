@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joindx.ai グローバル戦略インフォグラフィック</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: #f8fafc;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #0A9396, #94D2BD);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .kpi-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border-left: 5px solid #EE9B00;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -31.5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #0A9396;
+            border: 3px solid #f8fafc;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-[#001219]">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#005F73] leading-tight">動物医療AI革命</h1>
+            <p class="text-xl md:text-2xl font-bold mt-2 gradient-text">joindx.aiのグローバル展開戦略</p>
+            <p class="mt-4 max-w-3xl mx-auto text-slate-600">
+                本インフォグラフィックは、急成長する動物医療AI市場におけるjoindx.aiの戦略的位置づけと、獣医師およびペットオーナー双方に提供する価値を可視化します。
+            </p>
+        </header>
+
+        <section id="market-opportunity" class="my-16">
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center text-[#005F73]">77億ドル市場への挑戦：動物医療AIの急成長</h2>
+                <p class="text-center mt-2 text-slate-600 max-w-2xl mx-auto">世界の動物医療AI市場は、年平均成長率19.2%で驚異的な成長を遂げると予測されています。これは、joindx.aiにとって前例のない機会を意味します。</p>
+                <div class="chart-container mt-8 h-80 md:h-96">
+                    <canvas id="marketGrowthChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem" class="my-16">
+            <h2 class="text-3xl font-bold text-center text-[#005F73] mb-8">2つの視点、1つの課題</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#AE2012]">
+                    <h3 class="text-2xl font-bold text-[#005F73]">獣医師の苦悩</h3>
+                    <p class="mt-2 text-slate-600">情報過多、診断へのプレッシャー、そして燃え尽き症候群。日々の業務は、信頼できる情報を迅速に見つけ出すという大きな課題に直面しています。</p>
+                    <ul class="mt-4 space-y-2 text-slate-700">
+                        <li class="flex items-center"><span class="text-[#AE2012] mr-2">●</span> 70%がAIの信頼性・正確性に懸念</li>
+                        <li class="flex items-center"><span class="text-[#AE2012] mr-2">●</span> 54%がデータセキュリティを問題視</li>
+                        <li class="flex items-center"><span class="text-[#AE2012] mr-2">●</span> 43%がトレーニング不足を障壁と認識</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#EE9B00]">
+                    <h3 class="text-2xl font-bold text-[#005F73]">ペットオーナーの不安</h3>
+                    <p class="mt-2 text-slate-600">インターネットに溢れる不確かな情報（"Dr. Google"）は、不安を煽り、適切な判断を妨げます。本当に信頼できる情報源が求められています。</p>
+                    <ul class="mt-4 space-y-2 text-slate-700">
+                        <li class="flex items-center"><span class="text-[#EE9B00] mr-2">●</span> 誤情報による不安と混乱</li>
+                        <li class="flex items-center"><span class="text-[#EE9B00] mr-2">●</span> 症状の正確な伝達の難しさ</li>
+                        <li class="flex items-center"><span class="text-[#EE9B00] mr-2">●</span> 病院へ行くべきかの判断の迷い</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" class="my-16 text-center">
+            <h2 class="text-3xl font-bold text-[#005F73]">解決策は「joindx.ai」</h2>
+            <p class="mt-2 text-slate-600 max-w-2xl mx-auto">joindx.aiは、獣医師とペットオーナーの間に存在する情報の溝を埋める「動物ケアのコパイロット」です。信頼できる単一の情報源から、それぞれのニーズに最適化された回答を提供します。</p>
+            <div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3 text-center">
+                    <div class="text-4xl">👨‍⚕️</div>
+                    <h4 class="text-xl font-bold mt-2 text-[#005F73]">獣医師</h4>
+                    <p class="text-slate-600 text-sm">エビデンスに基づく迅速な回答</p>
+                </div>
+                <div class="hidden md:block text-4xl text-[#0A9396] font-bold">→</div>
+                <div class="md:hidden text-4xl text-[#0A9396] font-bold">↓</div>
+                <div class="bg-[#005F73] p-6 rounded-lg shadow-lg w-full md:w-1/2 text-white">
+                     <h4 class="text-xl font-bold">joindx.ai AIエンジン</h4>
+                     <p class="mt-1 text-sm text-slate-200">数千万件の論文・書籍・ガイドライン</p>
+                </div>
+                <div class="hidden md:block text-4xl text-[#0A9396] font-bold">→</div>
+                <div class="md:hidden text-4xl text-[#0A9396] font-bold">↓</div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3 text-center">
+                    <div class="text-4xl">🐾</div>
+                    <h4 class="text-xl font-bold mt-2 text-[#005F73]">ペットオーナー</h4>
+                    <p class="text-slate-600 text-sm">信頼できる日々のケア情報</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="success-factors" class="my-16">
+            <h2 class="text-3xl font-bold text-center text-[#005F73] mb-8">成功への道筋：GitHub Copilotからの教訓</h2>
+            <p class="text-center mt-2 mb-10 text-slate-600 max-w-2xl mx-auto">開発者向けツール「GitHub Copilot」の成功は、専門家向けAIツールの価値を証明しています。joindx.aiは、この成功モデルを動物医療分野で再現します。</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="kpi-card">
+                    <p class="text-6xl font-black text-[#0A9396]">55%</p>
+                    <h3 class="text-xl font-bold mt-2 text-[#005F73]">生産性向上</h3>
+                    <p class="text-slate-600 mt-1">獣医師の研究・診断時間を大幅に短縮し、より多くの患者ケアを可能にします。</p>
+                </div>
+                <div class="kpi-card">
+                    <p class="text-6xl font-black text-[#0A9396]">75%</p>
+                    <h3 class="text-xl font-bold mt-2 text-[#005F73]">満足度向上</h3>
+                    <p class="text-slate-600 mt-1">反復作業を減らし、専門家としての価値ある業務に集中することで、燃え尽き症候群を軽減します。</p>
+                </div>
+                <div class="kpi-card">
+                    <p class="text-6xl font-black text-[#0A9396]">25x</p>
+                    <h3 class="text-xl font-bold mt-2 text-[#005F73]">投資収益率 (ROI)</h3>
+                    <p class="text-slate-600 mt-1">時間節約効果は、サービスの利用料をはるかに上回る経済的価値を生み出します。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="global-market" class="my-16">
+            <h2 class="text-3xl font-bold text-center text-[#005F73] mb-8">グローバル市場分析：3つの主要戦域</h2>
+             <p class="text-center mt-2 mb-10 text-slate-600 max-w-2xl mx-auto">joindx.aiは、各市場の特性を深く理解し、地域ごとに最適化されたアプローチで展開します。</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold text-[#005F73] border-b-2 border-[#94D2BD] pb-2">🇺🇸 米国</h3>
+                    <p class="text-4xl font-black text-[#0A9396] my-4">39.2%</p>
+                    <p class="text-slate-600 font-bold mb-4">獣医師のAIツール利用率</p>
+                    <p class="text-slate-600 text-sm">高いAI受容性を背景に、VCPR（獣医師-依頼主-患者関係）規制を遵守した支援ツールとして浸透を図ります。</p>
+                    <div class="chart-container h-64 mt-4"><canvas id="usConcernChart"></canvas></div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold text-[#005F73] border-b-2 border-[#94D2BD] pb-2">🇪🇺 欧州</h3>
+                    <p class="text-4xl font-black text-[#0A9396] my-4">12.4%</p>
+                     <p class="text-slate-600 font-bold mb-4">ペットケアAI市場の年平均成長率</p>
+                    <p class="text-slate-600 text-sm">ドイツ、フランスを筆頭に急成長する市場。GDPRを遵守した高いデータ保護基準で信頼を獲得します。</p>
+                    <div class="chart-container h-64 mt-4"><canvas id="euConcernChart"></canvas></div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold text-[#005F73] border-b-2 border-[#94D2BD] pb-2">🇯🇵 日本</h3>
+                    <p class="text-4xl font-black text-[#0A9396] my-4">>1</p>
+                     <p class="text-slate-600 font-bold mb-4">子供の数に対するペットの比率</p>
+                    <p class="text-slate-600 text-sm">高齢化とペットの家族化を背景に、健康モニタリングや日々のケアを支援するツールへの需要は絶大です。</p>
+                    <div class="chart-container h-64 mt-4"><canvas id="jpConcernChart"></canvas></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="my-16">
+            <h2 class="text-3xl font-bold text-center text-[#005F73] mb-12">グローバル展開へのロードマップ</h2>
+            <div class="relative max-w-2xl mx-auto">
+                <div class="border-l-4 border-[#94D2BD] absolute h-full top-0 left-[-15px]"></div>
+                <div class="space-y-12 pl-8">
+                    <div class="relative timeline-item">
+                        <div class="bg-[#EE9B00] text-white font-bold rounded-full w-24 text-center py-1 mb-2">フェーズ 1</div>
+                        <h3 class="text-2xl font-bold text-[#005F73]">基盤構築と日本市場投入</h3>
+                        <p class="text-slate-600">日本市場でコア機能を検証し、初期ユーザーを獲得。獣医師会との連携やパイロットプログラムを通じて信頼性を構築します。</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <div class="bg-[#CA6702] text-white font-bold rounded-full w-24 text-center py-1 mb-2">フェーズ 2</div>
+                        <h3 class="text-2xl font-bold text-[#005F73]">機能拡張と欧米市場への展開</h3>
+                        <p class="text-slate-600">PIMS/EMR統合などの機能拡張を実施。地域ごとの規制と文化に適合させながら、米国・欧州市場へ本格参入します。</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <div class="bg-[#AE2012] text-white font-bold rounded-full w-24 text-center py-1 mb-2">フェーズ 3</div>
+                        <h3 class="text-2xl font-bold text-[#005F73]">グローバル最適化と継続的改善</h3>
+                        <p class="text-slate-600">全地域でユーザーフィードバックに基づきサービスを最適化。市場リーダーとしての地位を確立し、AI技術の最先端を走り続けます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-16 py-8 border-t border-slate-200">
+            <p class="text-lg font-bold text-[#005F73]">joindx.ai: 動物と、それに関わる全ての人のために。</p>
+            <p class="text-slate-500 mt-2 text-sm">より健全な動物ケアの未来を、AIの力で創造します。</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const brilliantBlues = {
+            darkTeal: '#005F73',
+            mediumTeal: '#0A9396',
+            lightTeal: '#94D2BD',
+            accentOrange: '#EE9B00',
+            accentRed: '#AE2012',
+            textPrimary: '#001219',
+            textSecondary: '#64748b'
+        };
+
+        function wrapLabel(label) {
+            const maxLength = 16;
+            if (typeof label !== 'string' || label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + ' ' + word).length > maxLength) {
+                    lines.push(currentLine);
+                    currentLine = word;
+                } else {
+                    currentLine = currentLine ? currentLine + ' ' + word : word;
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+        
+        const tooltipTitleCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        };
+
+        const marketGrowthData = {
+            labels: ['2024', '2026', '2028', '2030', '2032', '2034'],
+            datasets: [{
+                label: '市場規模 (10億ドル)',
+                data: [1.35, 2.00, 2.96, 4.38, 6.48, 7.76],
+                fill: true,
+                backgroundColor: 'rgba(10, 147, 150, 0.2)',
+                borderColor: brilliantBlues.mediumTeal,
+                tension: 0.4,
+                pointBackgroundColor: brilliantBlues.mediumTeal,
+                pointRadius: 5,
+            }]
+        };
+
+        new Chart(document.getElementById('marketGrowthChart'), {
+            type: 'line',
+            data: marketGrowthData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: '市場規模 (10億ドル)'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: tooltipTitleCallback.plugins.tooltip
+                }
+            }
+        });
+
+        const concernData = {
+            labels: ['信頼性・正確性', 'データセキュリティ', 'トレーニング不足', 'コスト'],
+            datasets: [{
+                label: '獣医師の懸念',
+                data: [70, 54, 43, 35], 
+                backgroundColor: [
+                    brilliantBlues.accentRed,
+                    brilliantBlues.accentOrange,
+                    brilliantBlues.mediumTeal,
+                    brilliantBlues.lightTeal,
+                ],
+                borderColor: '#f8fafc',
+                borderWidth: 2
+            }]
+        };
+        
+        const doughnutOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        boxWidth: 12,
+                        font: {
+                            size: 10
+                        }
+                    }
+                },
+                title: {
+                    display: true,
+                    text: '獣医師の懸念事項 (%)'
+                },
+                tooltip: tooltipTitleCallback.plugins.tooltip
+            },
+            cutout: '60%'
+        };
+
+        new Chart(document.getElementById('usConcernChart'), {
+            type: 'doughnut',
+            data: concernData,
+            options: doughnutOptions
+        });
+        new Chart(document.getElementById('euConcernChart'), {
+            type: 'doughnut',
+            data: concernData,
+            options: doughnutOptions
+        });
+        new Chart(document.getElementById('jpConcernChart'), {
+            type: 'doughnut',
+            data: concernData,
+            options: doughnutOptions
+        });
+    </script>
+</body>
+</html>
