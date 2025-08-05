@@ -3,349 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>joindx.ai グローバル戦略インフォグラフィック</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>私の獣医さん by AnyMall AI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Inter', 'Noto Sans JP', sans-serif;
-            background-color: #f8fafc;
-        }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px;
-            max-height: 400px;
-        }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-            }
-        }
-        .gradient-text {
-            background: linear-gradient(to right, #0A9396, #94D2BD);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .kpi-card {
-            background-color: white;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            text-align: center;
-            border-left: 5px solid #EE9B00;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -31.5px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: #0A9396;
-            border: 3px solid #f8fafc;
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-[#001219]">
+<body class="bg-gray-50 text-gray-800">
 
-    <div class="container mx-auto p-4 md:p-8">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-indigo-600">私の獣医さん by AnyMall AI</h1>
+            <a href="#cta" class="bg-indigo-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-600 transition-colors duration-300 shadow-md">健康チェックを始める</a>
+        </div>
+    </header>
 
-        <header class="text-center my-12">
-            <h1 class="text-4xl md:text-6xl font-black text-[#005F73] leading-tight">動物医療AI革命</h1>
-            <p class="text-xl md:text-2xl font-bold mt-2 gradient-text">joindx.aiのグローバル展開戦略</p>
-            <p class="mt-4 max-w-3xl mx-auto text-slate-600">
-                本インフォグラフィックは、急成長する動物医療AI市場におけるjoindx.aiの戦略的位置づけと、獣医師およびペットオーナー双方に提供する価値を可視化します。
-            </p>
-        </header>
-
-        <section id="market-opportunity" class="my-16">
-            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
-                <h2 class="text-3xl font-bold text-center text-[#005F73]">77億ドル市場への挑戦：動物医療AIの急成長</h2>
-                <p class="text-center mt-2 text-slate-600 max-w-2xl mx-auto">世界の動物医療AI市場は、年平均成長率19.2%で驚異的な成長を遂げると予測されています。これは、joindx.aiにとって前例のない機会を意味します。</p>
-                <div class="chart-container mt-8 h-80 md:h-96">
-                    <canvas id="marketGrowthChart"></canvas>
+    <!-- Hero Section -->
+    <main>
+        <section class="bg-indigo-50 text-center py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <!-- ユーザーから提供された新しいコピーを適用 -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-tight mb-4">
+                    愛する家族の健康を<br class="md:hidden">一緒に守りましょう。
+                </h2>
+                <p class="text-lg sm:text-xl md:text-2xl font-semibold text-indigo-700 mb-8">
+                    いつでも相談できる獣医師監修のAIパートナー<br class="md:hidden">「私の獣医さん by AnyMall AI」
+                </p>
+                <div class="relative w-full max-w-2xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="https://placehold.co/1200x600/6366F1/FFFFFF?text=Warm+Image+of+Pet+and+Owner" alt="ペットと飼い主の温かいイメージ" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-indigo-500 bg-opacity-10"></div>
                 </div>
+                <!-- CTAボタンのテキストを新しいコピーに更新 -->
+                <a href="#cta" class="mt-8 inline-block bg-indigo-600 text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">健康チェックを始める</a>
             </div>
         </section>
 
-        <section id="problem" class="my-16">
-            <h2 class="text-3xl font-bold text-center text-[#005F73] mb-8">2つの視点、1つの課題</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#AE2012]">
-                    <h3 class="text-2xl font-bold text-[#005F73]">獣医師の苦悩</h3>
-                    <p class="mt-2 text-slate-600">情報過多、診断へのプレッシャー、そして燃え尽き症候群。日々の業務は、信頼できる情報を迅速に見つけ出すという大きな課題に直面しています。</p>
-                    <ul class="mt-4 space-y-2 text-slate-700">
-                        <li class="flex items-center"><span class="text-[#AE2012] mr-2">●</span> 70%がAIの信頼性・正確性に懸念</li>
-                        <li class="flex items-center"><span class="text-[#AE2012] mr-2">●</span> 54%がデータセキュリティを問題視</li>
-                        <li class="flex items-center"><span class="text-[#AE2012] mr-2">●</span> 43%がトレーニング不足を障壁と認識</li>
-                    </ul>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#EE9B00]">
-                    <h3 class="text-2xl font-bold text-[#005F73]">ペットオーナーの不安</h3>
-                    <p class="mt-2 text-slate-600">インターネットに溢れる不確かな情報（"Dr. Google"）は、不安を煽り、適切な判断を妨げます。本当に信頼できる情報源が求められています。</p>
-                    <ul class="mt-4 space-y-2 text-slate-700">
-                        <li class="flex items-center"><span class="text-[#EE9B00] mr-2">●</span> 誤情報による不安と混乱</li>
-                        <li class="flex items-center"><span class="text-[#EE9B00] mr-2">●</span> 症状の正確な伝達の難しさ</li>
-                        <li class="flex items-center"><span class="text-[#EE9B00] mr-2">●</span> 病院へ行くべきかの判断の迷い</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="solution" class="my-16 text-center">
-            <h2 class="text-3xl font-bold text-[#005F73]">解決策は「joindx.ai」</h2>
-            <p class="mt-2 text-slate-600 max-w-2xl mx-auto">joindx.aiは、獣医師とペットオーナーの間に存在する情報の溝を埋める「動物ケアのコパイロット」です。信頼できる単一の情報源から、それぞれのニーズに最適化された回答を提供します。</p>
-            <div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3 text-center">
-                    <div class="text-4xl">👨‍⚕️</div>
-                    <h4 class="text-xl font-bold mt-2 text-[#005F73]">獣医師</h4>
-                    <p class="text-slate-600 text-sm">エビデンスに基づく迅速な回答</p>
-                </div>
-                <div class="hidden md:block text-4xl text-[#0A9396] font-bold">→</div>
-                <div class="md:hidden text-4xl text-[#0A9396] font-bold">↓</div>
-                <div class="bg-[#005F73] p-6 rounded-lg shadow-lg w-full md:w-1/2 text-white">
-                     <h4 class="text-xl font-bold">joindx.ai AIエンジン</h4>
-                     <p class="mt-1 text-sm text-slate-200">数千万件の論文・書籍・ガイドライン</p>
-                </div>
-                <div class="hidden md:block text-4xl text-[#0A9396] font-bold">→</div>
-                <div class="md:hidden text-4xl text-[#0A9396] font-bold">↓</div>
-                <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3 text-center">
-                    <div class="text-4xl">🐾</div>
-                    <h4 class="text-xl font-bold mt-2 text-[#005F73]">ペットオーナー</h4>
-                    <p class="text-slate-600 text-sm">信頼できる日々のケア情報</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="success-factors" class="my-16">
-            <h2 class="text-3xl font-bold text-center text-[#005F73] mb-8">成功への道筋：GitHub Copilotからの教訓</h2>
-            <p class="text-center mt-2 mb-10 text-slate-600 max-w-2xl mx-auto">開発者向けツール「GitHub Copilot」の成功は、専門家向けAIツールの価値を証明しています。joindx.aiは、この成功モデルを動物医療分野で再現します。</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="kpi-card">
-                    <p class="text-6xl font-black text-[#0A9396]">55%</p>
-                    <h3 class="text-xl font-bold mt-2 text-[#005F73]">生産性向上</h3>
-                    <p class="text-slate-600 mt-1">獣医師の研究・診断時間を大幅に短縮し、より多くの患者ケアを可能にします。</p>
-                </div>
-                <div class="kpi-card">
-                    <p class="text-6xl font-black text-[#0A9396]">75%</p>
-                    <h3 class="text-xl font-bold mt-2 text-[#005F73]">満足度向上</h3>
-                    <p class="text-slate-600 mt-1">反復作業を減らし、専門家としての価値ある業務に集中することで、燃え尽き症候群を軽減します。</p>
-                </div>
-                <div class="kpi-card">
-                    <p class="text-6xl font-black text-[#0A9396]">25x</p>
-                    <h3 class="text-xl font-bold mt-2 text-[#005F73]">投資収益率 (ROI)</h3>
-                    <p class="text-slate-600 mt-1">時間節約効果は、サービスの利用料をはるかに上回る経済的価値を生み出します。</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="global-market" class="my-16">
-            <h2 class="text-3xl font-bold text-center text-[#005F73] mb-8">グローバル市場分析：3つの主要戦域</h2>
-             <p class="text-center mt-2 mb-10 text-slate-600 max-w-2xl mx-auto">joindx.aiは、各市場の特性を深く理解し、地域ごとに最適化されたアプローチで展開します。</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-2xl font-bold text-[#005F73] border-b-2 border-[#94D2BD] pb-2">🇺🇸 米国</h3>
-                    <p class="text-4xl font-black text-[#0A9396] my-4">39.2%</p>
-                    <p class="text-slate-600 font-bold mb-4">獣医師のAIツール利用率</p>
-                    <p class="text-slate-600 text-sm">高いAI受容性を背景に、VCPR（獣医師-依頼主-患者関係）規制を遵守した支援ツールとして浸透を図ります。</p>
-                    <div class="chart-container h-64 mt-4"><canvas id="usConcernChart"></canvas></div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-2xl font-bold text-[#005F73] border-b-2 border-[#94D2BD] pb-2">🇪🇺 欧州</h3>
-                    <p class="text-4xl font-black text-[#0A9396] my-4">12.4%</p>
-                     <p class="text-slate-600 font-bold mb-4">ペットケアAI市場の年平均成長率</p>
-                    <p class="text-slate-600 text-sm">ドイツ、フランスを筆頭に急成長する市場。GDPRを遵守した高いデータ保護基準で信頼を獲得します。</p>
-                    <div class="chart-container h-64 mt-4"><canvas id="euConcernChart"></canvas></div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <h3 class="text-2xl font-bold text-[#005F73] border-b-2 border-[#94D2BD] pb-2">🇯🇵 日本</h3>
-                    <p class="text-4xl font-black text-[#0A9396] my-4">>1</p>
-                     <p class="text-slate-600 font-bold mb-4">子供の数に対するペットの比率</p>
-                    <p class="text-slate-600 text-sm">高齢化とペットの家族化を背景に、健康モニタリングや日々のケアを支援するツールへの需要は絶大です。</p>
-                    <div class="chart-container h-64 mt-4"><canvas id="jpConcernChart"></canvas></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="roadmap" class="my-16">
-            <h2 class="text-3xl font-bold text-center text-[#005F73] mb-12">グローバル展開へのロードマップ</h2>
-            <div class="relative max-w-2xl mx-auto">
-                <div class="border-l-4 border-[#94D2BD] absolute h-full top-0 left-[-15px]"></div>
-                <div class="space-y-12 pl-8">
-                    <div class="relative timeline-item">
-                        <div class="bg-[#EE9B00] text-white font-bold rounded-full w-24 text-center py-1 mb-2">フェーズ 1</div>
-                        <h3 class="text-2xl font-bold text-[#005F73]">基盤構築と日本市場投入</h3>
-                        <p class="text-slate-600">日本市場でコア機能を検証し、初期ユーザーを獲得。獣医師会との連携やパイロットプログラムを通じて信頼性を構築します。</p>
+        <!-- New Service Description Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl text-center">
+                <!-- ユーザーから提供されたサービス説明文を適用 -->
+                <p class="text-xl sm:text-2xl font-bold text-gray-900 mb-8">
+                    愛するペットの「いつもと違う」に気づいたら、<br>
+                    まずはここで相談してみませんか？
+                </p>
+                <div class="grid sm:grid-cols-3 gap-6 mb-8">
+                    <div class="p-4 bg-indigo-100 rounded-xl shadow-md">
+                        <span class="text-3xl text-indigo-500">✓</span>
+                        <p class="mt-2 font-semibold text-gray-800">獣医師監修の信頼できる回答</p>
                     </div>
-                    <div class="relative timeline-item">
-                        <div class="bg-[#CA6702] text-white font-bold rounded-full w-24 text-center py-1 mb-2">フェーズ 2</div>
-                        <h3 class="text-2xl font-bold text-[#005F73]">機能拡張と欧米市場への展開</h3>
-                        <p class="text-slate-600">PIMS/EMR統合などの機能拡張を実施。地域ごとの規制と文化に適合させながら、米国・欧州市場へ本格参入します。</p>
+                    <div class="p-4 bg-indigo-100 rounded-xl shadow-md">
+                        <span class="text-3xl text-indigo-500">✓</span>
+                        <p class="mt-2 font-semibold text-gray-800">24時間365日いつでも相談可能</p>
                     </div>
-                    <div class="relative timeline-item">
-                        <div class="bg-[#AE2012] text-white font-bold rounded-full w-24 text-center py-1 mb-2">フェーズ 3</div>
-                        <h3 class="text-2xl font-bold text-[#005F73]">グローバル最適化と継続的改善</h3>
-                        <p class="text-slate-600">全地域でユーザーフィードバックに基づきサービスを最適化。市場リーダーとしての地位を確立し、AI技術の最先端を走り続けます。</p>
+                    <div class="p-4 bg-indigo-100 rounded-xl shadow-md">
+                        <span class="text-3xl text-indigo-500">✓</span>
+                        <p class="mt-2 font-semibold text-gray-800">症状の緊急度を適切に判定</p>
+                    </div>
+                </div>
+                <p class="text-base sm:text-lg text-gray-700">
+                    緊急時は迷わず病院へ。<br>
+                    日常の心配事は、私たちにお任せください。
+                </p>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">こんなお悩み、ありませんか？</h3>
+                <ul class="space-y-6 text-lg text-gray-700">
+                    <!-- 日常の悩みを追加 -->
+                    <li class="flex items-start">
+                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
+                        <span>「フードを変えたら食べなくなったけど、このまま様子を見ていいの？」</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
+                        <span>「歯磨きを嫌がるけど、どうしたら習慣づけられる？」</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
+                        <span>「散歩中に他のワンちゃんに吠えちゃうのが悩み…」</span>
+                    </li>
+                    <!-- 元々の悩みを残しつつ、少し表現を調整 -->
+                    <li class="flex items-start">
+                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
+                        <span>「うちの子のこの行動、病気のサイン？それともただの癖？」</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
+                        <span>「急いで病院に行くべき？それとも様子を見て大丈夫？」</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Replacement Section -->
+        <section class="bg-indigo-50 py-16">
+            <div class="container mx-auto px-4 text-center max-w-4xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-indigo-900 mb-6">ネットやSNSの検索を<br class="sm:hidden">「私の獣医さん」に置き換えませんか？</h3>
+                <p class="text-base sm:text-lg text-indigo-700 mb-8">
+                    ネット上には無数の情報があふれていますが、その情報の信頼性や正確性は本当に大丈夫でしょうか？<br>
+                    不確かな情報に振り回されるのは、もう終わりにしましょう。
+                </p>
+                <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-indigo-200">
+                    <p class="text-xl sm:text-2xl font-bold text-gray-900">
+                        「私の獣医さん by AnyMall AI」は、<br>
+                        あなたの小さな不安に、<br>
+                        <span class="text-indigo-600">獣医師監修の信頼できる情報</span>で、<br>
+                        すぐにお答えします。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strength Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">圧倒的な信頼感と、驚きのサクサク感</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-indigo-100 p-6 rounded-2xl shadow-lg border border-indigo-200">
+                        <h4 class="text-xl font-bold text-indigo-800 mb-4 flex items-center">
+                            <span class="mr-2 text-3xl">✨</span> 世界最高峰の信頼性
+                        </h4>
+                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
+                            <li>A'alda所属の40人以上の獣医師が監修。</li>
+                            <li>2,800万件近くの医学論文や獣医ガイドラインを学習。</li>
+                            <li>SNSやネットに存在する誤情報に惑わされません。</li>
+                        </ul>
+                    </div>
+                    <div class="bg-pink-100 p-6 rounded-2xl shadow-lg border border-pink-200">
+                        <h4 class="text-xl font-bold text-pink-800 mb-4 flex items-center">
+                            <span class="mr-2 text-3xl">🤖</span> 嘘を言わないAI
+                        </h4>
+                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
+                            <li>ハルシネーション対策が不要な、正確な回答。</li>
+                            <li>獣医師の知識をインプットしたAIだから、プロの視点で答えを導き出します。</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="text-center mt-16 py-8 border-t border-slate-200">
-            <p class="text-lg font-bold text-[#005F73]">joindx.ai: 動物と、それに関わる全ての人のために。</p>
-            <p class="text-slate-500 mt-2 text-sm">より健全な動物ケアの未来を、AIの力で創造します。</p>
-        </footer>
+        <!-- Service Section -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">提供サービス</h3>
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row items-center bg-white p-8 rounded-3xl shadow-xl">
+                        <img src="https://placehold.co/200x200/F1F5F9/94A3B8?text=AI+Icon" alt="AIアイコン" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-4 md:mb-0 md:mr-8">
+                        <div class="text-center md:text-left">
+                            <h4 class="text-2xl font-bold text-indigo-600 mb-2">1. 私の獣医さんAI</h4>
+                            <p class="text-gray-700">ペットの種類や年齢、症状を入力するだけで、専門的な知見に基づいた回答を瞬時に生成。日々の疑問から、病院に行くべきかの判断材料まで、いつでも頼れるあなたのパートナーです。</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center bg-white p-8 rounded-3xl shadow-xl">
+                        <img src="https://placehold.co/200x200/F1F5F9/94A3B8?text=Report+Icon" alt="レポートアイコン" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-4 md:mb-0 md:mr-8">
+                        <div class="text-center md:text-left">
+                            <h4 class="text-2xl font-bold text-indigo-600 mb-2">2. AIさくっと即レポ</h4>
+                            <p class="text-gray-700">病院での検査結果ファイルをアップロードするだけで、専門的な数値を分かりやすく解説。現在の健康状態や、これから注意すべきポイントを教えてくれるので、獣医師さんとのコミュニケーションがよりスムーズになります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </div>
+        <!-- How to use & Video Section -->
+        <section class="py-16 bg-white text-center">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">使い方はとっても簡単！</h3>
+                <img src="https://placehold.co/1200x600/E2E8F0/4A5568?text=Animated+GIF+of+App+Usage" alt="サービスの利用方法" class="w-full max-w-2xl mx-auto rounded-xl shadow-lg mb-12">
 
-    <script>
-        const brilliantBlues = {
-            darkTeal: '#005F73',
-            mediumTeal: '#0A9396',
-            lightTeal: '#94D2BD',
-            accentOrange: '#EE9B00',
-            accentRed: '#AE2012',
-            textPrimary: '#001219',
-            textSecondary: '#64748b'
-        };
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">プロモーション動画はこちら</h3>
+                <div class="relative w-full max-w-2xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg">
+                    <!-- A placeholder for a YouTube video embed -->
+                    <div class="absolute inset-0 flex items-center justify-center bg-gray-300">
+                        <svg class="w-20 h-20 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        function wrapLabel(label) {
-            const maxLength = 16;
-            if (typeof label !== 'string' || label.length <= maxLength) {
-                return label;
-            }
-            const words = label.split(' ');
-            const lines = [];
-            let currentLine = '';
-            for (const word of words) {
-                if ((currentLine + ' ' + word).length > maxLength) {
-                    lines.push(currentLine);
-                    currentLine = word;
-                } else {
-                    currentLine = currentLine ? currentLine + ' ' + word : word;
-                }
-            }
-            lines.push(currentLine);
-            return lines;
-        }
-        
-        const tooltipTitleCallback = {
-            plugins: {
-                tooltip: {
-                    callbacks: {
-                        title: function(tooltipItems) {
-                            const item = tooltipItems[0];
-                            let label = item.chart.data.labels[item.dataIndex];
-                            if (Array.isArray(label)) {
-                              return label.join(' ');
-                            }
-                            return label;
-                        }
-                    }
-                }
-            }
-        };
+        <!-- Pricing Section -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">料金プラン</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-200 text-center">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-4">無料プラン</h4>
+                        <p class="text-4xl font-extrabold text-indigo-600 mb-6">¥0<span class="text-lg text-gray-600">/月</span></p>
+                        <p class="text-gray-700 mb-6">月5回まで質問可能</p>
+                        <a href="#cta" class="inline-block bg-indigo-500 text-white font-bold px-8 py-3 rounded-full hover:bg-indigo-600 transition-colors duration-300 shadow-md">まずは試してみる</a>
+                    </div>
+                    <div class="bg-indigo-600 p-8 rounded-3xl shadow-xl text-white text-center transform scale-105">
+                        <h4 class="text-2xl font-bold mb-4">有料プラン</h4>
+                        <p class="text-4xl font-extrabold mb-6">¥2,200<span class="text-lg">/月（税込）</span></p>
+                        <p class="mb-6">質問回数無制限で、いつでも安心。<br>全ての機能をご利用いただけます。</p>
+                        <a href="#cta" class="inline-block bg-white text-indigo-600 font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors duration-300 shadow-md">有料プランに申し込む</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        const marketGrowthData = {
-            labels: ['2024', '2026', '2028', '2030', '2032', '2034'],
-            datasets: [{
-                label: '市場規模 (10億ドル)',
-                data: [1.35, 2.00, 2.96, 4.38, 6.48, 7.76],
-                fill: true,
-                backgroundColor: 'rgba(10, 147, 150, 0.2)',
-                borderColor: brilliantBlues.mediumTeal,
-                tension: 0.4,
-                pointBackgroundColor: brilliantBlues.mediumTeal,
-                pointRadius: 5,
-            }]
-        };
+        <!-- CTA Section -->
+        <section id="cta" class="bg-indigo-50 py-20 text-center">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h3 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-4">まずは無料で始めてみませんか？</h3>
+                <p class="text-lg md:text-xl text-indigo-700 mb-8">
+                    大切な家族との毎日を、もっと安心して、もっと楽しく。<br>
+                    さあ、「私の獣医さん by AnyMall AI」で、新しいペットライフを始めましょう。
+                </p>
+                <a href="#" class="inline-block bg-indigo-600 text-white text-xl font-bold px-12 py-5 rounded-full shadow-2xl transform hover:scale-110 transition-all duration-300">健康チェックを始める</a>
+            </div>
+        </section>
+    </main>
 
-        new Chart(document.getElementById('marketGrowthChart'), {
-            type: 'line',
-            data: marketGrowthData,
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: '市場規模 (10億ドル)'
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: tooltipTitleCallback.plugins.tooltip
-                }
-            }
-        });
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-8">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 AnyMall. All rights reserved.</p>
+        </div>
+    </footer>
 
-        const concernData = {
-            labels: ['信頼性・正確性', 'データセキュリティ', 'トレーニング不足', 'コスト'],
-            datasets: [{
-                label: '獣医師の懸念',
-                data: [70, 54, 43, 35], 
-                backgroundColor: [
-                    brilliantBlues.accentRed,
-                    brilliantBlues.accentOrange,
-                    brilliantBlues.mediumTeal,
-                    brilliantBlues.lightTeal,
-                ],
-                borderColor: '#f8fafc',
-                borderWidth: 2
-            }]
-        };
-        
-        const doughnutOptions = {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        boxWidth: 12,
-                        font: {
-                            size: 10
-                        }
-                    }
-                },
-                title: {
-                    display: true,
-                    text: '獣医師の懸念事項 (%)'
-                },
-                tooltip: tooltipTitleCallback.plugins.tooltip
-            },
-            cutout: '60%'
-        };
-
-        new Chart(document.getElementById('usConcernChart'), {
-            type: 'doughnut',
-            data: concernData,
-            options: doughnutOptions
-        });
-        new Chart(document.getElementById('euConcernChart'), {
-            type: 'doughnut',
-            data: concernData,
-            options: doughnutOptions
-        });
-        new Chart(document.getElementById('jpConcernChart'), {
-            type: 'doughnut',
-            data: concernData,
-            options: doughnutOptions
-        });
-    </script>
 </body>
 </html>
