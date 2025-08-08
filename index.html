@@ -19,6 +19,7 @@
     <!-- Header Section -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- サービス名を変更 -->
             <h1 class="text-xl font-bold text-indigo-600">AnyMall わたしのAI獣医さん</h1>
             <a href="#cta" class="bg-indigo-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-600 transition-colors duration-300 shadow-md">健康チェックを始める</a>
         </div>
@@ -28,7 +29,7 @@
     <main>
         <section class="bg-indigo-50 text-center py-16 md:py-24">
             <div class="container mx-auto px-4">
-                <!-- ユーザーから提供された新しいコピーを適用 -->
+                <!-- FVコピーを修正 -->
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-tight mb-4">
                     愛する家族の健康を<br class="md:hidden">一緒に守りましょう。
                 </h2>
@@ -39,18 +40,18 @@
                     <img src="https://placehold.co/1200x600/6366F1/FFFFFF?text=Warm+Image+of+Pet+and+Owner" alt="ペットと飼い主の温かいイメージ" class="w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-indigo-500 bg-opacity-10"></div>
                 </div>
-                <!-- CTAボタンのテキストを新しいコピーに更新 -->
+                <!-- CTAボタンのテキストを更新 -->
                 <a href="#cta" class="mt-8 inline-block bg-indigo-600 text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">健康チェックを始める</a>
             </div>
         </section>
-
-        <!-- New Service Description Section -->
+        
+        <!-- 新しいサービス説明文のセクション -->
         <section class="py-16 bg-white">
             <div class="container mx-auto px-4 max-w-4xl text-center">
-                <!-- ユーザーから提供されたサービス説明文を適用 -->
+                <!-- サービス説明文を修正 -->
                 <p class="text-xl sm:text-2xl font-bold text-gray-900 mb-8">
                     愛するペットの「いつもと違う」に気づいたら、<br>
-                    まずはここで相談してみませんか？
+                    まずはAI獣医に相談してみませんか？
                 </p>
                 <div class="grid sm:grid-cols-3 gap-6 mb-8">
                     <div class="p-4 bg-indigo-100 rounded-xl shadow-md">
@@ -73,41 +74,84 @@
             </div>
         </section>
 
-        <!-- Problem Section -->
-        <section class="py-16 bg-white">
+        <!-- 悩みのセクション - グラフィック化と内容追加 -->
+        <section class="py-16 bg-gray-100">
             <div class="container mx-auto px-4 max-w-4xl">
                 <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">こんなお悩み、ありませんか？</h3>
-                <ul class="space-y-6 text-lg text-gray-700">
-                    <!-- 日常の悩みを追加 -->
-                    <li class="flex items-start">
-                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
-                        <span>「フードを変えたら食べなくなったけど、このまま様子を見ていいの？」</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
-                        <span>「歯磨きを嫌がるけど、どうしたら習慣づけられる？」</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
-                        <span>「散歩中に他のワンちゃんに吠えちゃうのが悩み…」</span>
-                    </li>
-                    <!-- 元々の悩みを残しつつ、少し表現を調整 -->
-                    <li class="flex items-start">
-                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
-                        <span>「うちの子のこの行動、病気のサイン？それともただの癖？」</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-3 text-2xl text-indigo-500">&bull;</span>
-                        <span>「急いで病院に行くべき？それとも様子を見て大丈夫？」</span>
-                    </li>
-                </ul>
+                <div class="grid sm:grid-cols-2 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <!-- アイコンをシンプルに変更 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.332 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                            <!-- 悩みの文章を調整 -->
+                            <p class="text-lg font-semibold ml-4">もしかして誤飲したかも...すぐに病院に連れて行くべきか迷ってしまいます。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <!-- アイコンをシンプルに変更 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.137a1 1 0 010-1.414l2.586-2.586a1 1 0 011.414 0l1 1a1 1 0 010 1.414l-2.586 2.586a1 1 0 01-1.414 0zm-12 1a1 1 0 010-1.414l2.586-2.586a1 1 0 011.414 0l1 1a1 1 0 010 1.414l-2.586 2.586a1 1 0 01-1.414 0zm-7.618 10a1 1 0 01-1.414 0l-2.586-2.586a1 1 0 010-1.414l1-1a1 1 0 011.414 0l2.586 2.586a1 1 0 010 1.414zM16 17a1 1 0 011.414 0l2.586 2.586a1 1 0 010 1.414l-1 1a1 1 0 01-1.414 0l-2.586-2.586a1 1 0 010-1.414zM12 21h.01M12 3h.01" /></svg>
+                            <!-- 悩みの文章を調整 -->
+                            <p class="text-lg font-semibold ml-4">足を気にしたり引きずったりするけど痛がらない...これは病院に行くべき？</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <!-- アイコンをシンプルに変更 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" /></svg>
+                            <!-- 悩みの文章を調整 -->
+                            <p class="text-lg font-semibold ml-4">トイレトレーニングがうまくいかない...どうすれば成功するのか知りたいです。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <!-- アイコンをシンプルに変更 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <!-- 悩みの文章を調整 -->
+                            <p class="text-lg font-semibold ml-4">フードを変えたら下痢が続いています...もしかして新しいフードが合っていないのかな？</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 悩みの解決理由（強み）セクション - 箇条書きとビジュアライズを強化 -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">その悩み、AnyMall わたしのAI獣医さんで解決できます</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-indigo-100 p-6 rounded-2xl shadow-lg border border-indigo-200 text-center">
+                        <div class="flex items-center justify-center mb-4 text-indigo-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-indigo-800 mb-4">圧倒的な信頼感</h4>
+                        <ul class="text-gray-700 text-sm text-left list-disc list-inside space-y-2">
+                            <li>A'alda所属の40人以上の獣医師が監修</li>
+                            <li>2,800万件近くの医学論文などを学習</li>
+                            <li>SNSやネットに存在する誤情報に惑わされません</li>
+                            <li>プロの視点で導き出された正確な回答を提供します</li>
+                        </ul>
+                    </div>
+                    <div class="bg-pink-100 p-6 rounded-2xl shadow-lg border border-pink-200 text-center">
+                        <div class="flex items-center justify-center mb-4 text-pink-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><path d="M4 14a1 1 0 0 1-.41-.1L2 13"/><path d="M22 14a1 1 0 0 1 .41-.1L20 13"/><path d="M12 22v-5"/><path d="M12 17a1 1 0 0 0 0-2"/><path d="M18 10a6 6 0 0 0-12 0c0 4.5-3 5.5-3 8h18c0-2.5-3-3.5-3-8"/><path d="M18 10h-2c0-1.8-1-3.2-2.7-4L12 4 10.7 6c-1.7.8-2.7 2.2-2.7 4H6"/></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-pink-800 mb-4">驚きのサクサク感</h4>
+                        <ul class="text-gray-700 text-sm text-left list-disc list-inside space-y-2">
+                            <li>「質問する」だけで、すぐに適切な回答が得られます</li>
+                            <li>まるで獣医師と対話しているかのような感覚</li>
+                            <li>Google検索やSNSで調べる手間を省けます</li>
+                            <li>知りたい情報に最速でたどり着くことができます</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Replacement Section -->
         <section class="bg-indigo-50 py-16">
             <div class="container mx-auto px-4 text-center max-w-4xl">
-                <h3 class="text-2xl md:text-3xl font-bold text-indigo-900 mb-6">ネットやSNSの検索を<br class="sm:hidden">「私の獣医さん」に置き換えませんか？</h3>
+                <h3 class="text-2xl md:text-3xl font-bold text-indigo-900 mb-6">ネットやSNSの検索を<br class="sm:hidden">「わたしのAI獣医さん」に置き換えませんか？</h3>
                 <p class="text-base sm:text-lg text-indigo-700 mb-8">
                     ネット上には無数の情報があふれていますが、その情報の信頼性や正確性は本当に大丈夫でしょうか？<br>
                     不確かな情報に振り回されるのは、もう終わりにしましょう。
@@ -123,79 +167,10 @@
             </div>
         </section>
 
-        <!-- Strength Section -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">圧倒的な信頼感と、驚きのサクサク感</h3>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-indigo-100 p-6 rounded-2xl shadow-lg border border-indigo-200">
-                        <h4 class="text-xl font-bold text-indigo-800 mb-4 flex items-center">
-                            <span class="mr-2 text-3xl">✨</span> 世界最高峰の信頼性
-                        </h4>
-                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
-                            <li>A'alda所属の40人以上の獣医師が監修。</li>
-                            <li>2,800万件近くの医学論文や獣医ガイドラインを学習。</li>
-                            <li>SNSやネットに存在する誤情報に惑わされません。</li>
-                        </ul>
-                    </div>
-                    <div class="bg-pink-100 p-6 rounded-2xl shadow-lg border border-pink-200">
-                        <h4 class="text-xl font-bold text-pink-800 mb-4 flex items-center">
-                            <span class="mr-2 text-3xl">🤖</span> 嘘を言わないAI
-                        </h4>
-                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
-                            <li>ハルシネーション対策が不要な、正確な回答。</li>
-                            <li>獣医師の知識をインプットしたAIだから、プロの視点で答えを導き出します。</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Service Section -->
-        <section class="bg-gray-100 py-16">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">提供サービス</h3>
-                <div class="space-y-12">
-                    <div class="flex flex-col md:flex-row items-center bg-white p-8 rounded-3xl shadow-xl">
-                        <img src="https://placehold.co/200x200/F1F5F9/94A3B8?text=AI+Icon" alt="AIアイコン" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-4 md:mb-0 md:mr-8">
-                        <div class="text-center md:text-left">
-                            <h4 class="text-2xl font-bold text-indigo-600 mb-2">1. 私の獣医さんAI</h4>
-                            <p class="text-gray-700">ペットの種類や年齢、症状を入力するだけで、専門的な知見に基づいた回答を瞬時に生成。日々の疑問から、病院に行くべきかの判断材料まで、いつでも頼れるあなたのパートナーです。</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col md:flex-row items-center bg-white p-8 rounded-3xl shadow-xl">
-                        <img src="https://placehold.co/200x200/F1F5F9/94A3B8?text=Report+Icon" alt="レポートアイコン" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-4 md:mb-0 md:mr-8">
-                        <div class="text-center md:text-left">
-                            <h4 class="text-2xl font-bold text-indigo-600 mb-2">2. AIさくっと即レポ</h4>
-                            <p class="text-gray-700">病院での検査結果ファイルをアップロードするだけで、専門的な数値を分かりやすく解説。現在の健康状態や、これから注意すべきポイントを教えてくれるので、獣医師さんとのコミュニケーションがよりスムーズになります。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- How to use & Video Section -->
-        <section class="py-16 bg-white text-center">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">使い方はとっても簡単！</h3>
-                <img src="https://placehold.co/1200x600/E2E8F0/4A5568?text=Animated+GIF+of+App+Usage" alt="サービスの利用方法" class="w-full max-w-2xl mx-auto rounded-xl shadow-lg mb-12">
-
-                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">プロモーション動画はこちら</h3>
-                <div class="relative w-full max-w-2xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg">
-                    <!-- A placeholder for a YouTube video embed -->
-                    <div class="absolute inset-0 flex items-center justify-center bg-gray-300">
-                        <svg class="w-20 h-20 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Pricing Section -->
         <section class="bg-gray-100 py-16">
             <div class="container mx-auto px-4 max-w-4xl">
-                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">料金プラン</h3>
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">料金プランはこちら</h3>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-200 text-center">
                         <h4 class="text-2xl font-bold text-gray-900 mb-4">無料プラン</h4>
@@ -205,7 +180,8 @@
                     </div>
                     <div class="bg-indigo-600 p-8 rounded-3xl shadow-xl text-white text-center transform scale-105">
                         <h4 class="text-2xl font-bold mb-4">有料プラン</h4>
-                        <p class="text-4xl font-extrabold mb-6">¥2,200<span class="text-lg">/月（税込）</span></p>
+                        <!-- 有料プランの金額を変更 -->
+                        <p class="text-4xl font-extrabold mb-6">¥3,850<span class="text-lg">/月（税込）</span></p>
                         <p class="mb-6">質問回数無制限で、いつでも安心。<br>全ての機能をご利用いただけます。</p>
                         <a href="#cta" class="inline-block bg-white text-indigo-600 font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors duration-300 shadow-md">有料プランに申し込む</a>
                     </div>
@@ -235,4 +211,3 @@
 
 </body>
 </html>
-
