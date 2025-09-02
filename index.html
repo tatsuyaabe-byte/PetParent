@@ -1,6 +1,6 @@
-<!-- Chosen Palette: Warm and Energetic (Orange, Peach, and White with a touch of Gold) -->
+<!-- Chosen Palette: Warm and inviting (Orange, Gray, and White) with a touch of Gold -->
 <!-- Application Structure Plan: 無料オファー、限定性、通常価格の価値を同じ熱量で訴求するため、視覚的な階層を強化。コアメッセージを一つの大きなブロックに統合し、フォントサイズ、太さ、色を大胆に変更することで、情報の重要度を強調。ユーザーが瞬時に価値と緊急性を理解し、登録へ進むよう設計した。 -->
-<!-- Visualization & Content Choices: 
+<!-- Visualization & Content Choices:
 - キャンペーンの主要オファー（20回分無料）と限定性（期間・人数）→ 説得と緊急性の訴求 → ヘッダー下にまとめた一つの強力なビジュアルブロック → ユーザーの目を即座に引きつけ、行動を促す → Tailwind CSS
 - 登録の容易さ → 摩擦の低減 → CTAボタン直下の簡潔なテキスト → ユーザーの負担を軽減する印象を与える → Tailwind CSS
 - 料金プランの訴求 → 価値の明確化 → 強調文字を用いた簡潔なフッターテキスト → 無料体験後の利用メリットを伝える → Tailwind CSS
@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>わたしのAI獣医さん リリースキャンペーン</title>
+    <title>わたしのAI獣医さんキャンペーン</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
@@ -57,21 +57,15 @@
         </header>
 
         <section class="bg-orange-100/80 border-4 border-orange-500 rounded-2xl p-6 md:p-8 mb-8 shadow-xl">
-            <p class="text-4xl md:text-5xl font-black text-yellow-600 mb-4 tracking-wide">
-                〜9/30まで<br>先着10,000名様限定
+            <p class="text-3xl md:text-4xl font-black text-yellow-600 mb-2 leading-tight">
+                2025年9月30日まで
             </p>
-            
-            <p class="text-4xl md:text-5xl font-black text-orange-800">
-                今だけ無料登録で
+            <p class="text-5xl md:text-6xl font-black text-yellow-600 mb-4 tracking-wide leading-tight">
+                先着10,000名様限定
             </p>
-            <p class="text-7xl md:text-8xl font-black text-orange-600 my-2 leading-none">
-                20<span class="text-5xl md:text-6xl">回分</span><span class="text-4xl md:text-5xl">の質問</span>
-            </p>
-            <p class="text-3xl md:text-4xl font-black text-orange-800 leading-tight">
-                無料でプレゼント！
-            </p>
-            <p class="text-xl md:text-2xl font-bold text-gray-600 mt-4 leading-relaxed">
-                <span class="strikethrough mr-1">通常月額1,980円(税込)</span>が今だけ無料でお試しいただけます
+
+            <p class="text-2xl md:text-3xl font-extrabold text-orange-700 mt-4 leading-relaxed">
+                通常<span class="strikethrough">月額1,980円(税込)</span>が<span class="text-red-500">0円</span>で体験できます。<br>無料登録で<span class="text-red-500">20回分</span>の質問チケットをプレゼント！
             </p>
         </section>
 
@@ -81,6 +75,9 @@
             </a>
             <p class="mt-4 text-base font-semibold text-gray-700">
                 登録はわずか3分で完了！
+            </p>
+            <p class="mt-8 text-lg md:text-xl font-bold text-orange-800 leading-tight">
+                この機会に、愛する家族との毎日に"わたしのAI獣医さん"をそばに置いてみませんか？
             </p>
         </section>
         
@@ -92,7 +89,6 @@
                 <li>既に登録頂いている方も対象</li>
             </ul>
             <p class="mt-4 font-semibold">キャンペーン終了後は、月額1,980円(税込)で月50質問までご利用いただけるProプランもご用意しています。<br class="md:hidden">※無料プランもございます。</p>
-            <p class="mt-4 font-semibold text-center text-sm">この機会に、愛する家族との毎日に“わたしのAI獣医さん”をそばに置いてみませんか？</p>
         </footer>
 
     </div>
