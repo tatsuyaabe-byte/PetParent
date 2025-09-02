@@ -1,9 +1,9 @@
 <!-- Chosen Palette: Calm Harmony -->
-<!-- Application Structure Plan: 無料登録というコンバージョンを最大化するため、単一で完結したポップアップ風のカードデザインを採用。ユーザーの注意を逸らさず、最も重要なオファー（20回無料）とCTA（コールトゥアクション）に視線を誘導する。登録の簡単さ（3分）やキャンペーン後の無料継続オプションを明確に提示し、登録への心理的ハードルを下げる構成とした。 -->
+<!-- Application Structure Plan: 無料登録というコンバージョンを最大化するため、単一で完結したポップアップ風のカードデザインを採用。ユーザーの注意を逸らさず、最も重要なオファー（20回無料）とCTA（コールトゥアクション）に視線を誘導する。登録の簡単さ（3分）やキャンペーン後の無料継続オプションを明確に提示し、登録への心理的ハードルを下げる構成とした。限定性を強く訴求するため、「先着1万名」と「9月末まで」という情報をメインオファーの近くに配置し、視覚的な階層を向上させた。 -->
 <!-- Visualization & Content Choices: 
 - キャンペーンの主要オファー → 説得 → 大きな文字と対照的な色を持つヒーロー要素 → 視覚的なインパクトで即時認知させる → Tailwind CSS
+- 限定性の強調 → 希少性と緊急性の訴求 → 目立つバッジ形式のテキスト → ユーザーの行動を促すトリガーとする → Tailwind CSS
 - 登録の容易さ → 摩擦の低減 → 明確で簡潔なテキスト → ユーザーの不安を解消する → Tailwind CSS
-- キャンペーン詳細・将来のプラン → 情報提供 → 整理されたテキストブロック → 信頼を構築し、透明性を示す → Tailwind CSS
 - CTAボタン → コンバージョン → 明確でアクションを促すボタン → ユーザーの次の行動を導く → Tailwind CSS
 - 確認：このコンテンツはプロモーションが目的なので、複雑な視覚化は不要。ダイレクトレスポンス広告の原則に基づき、階層が明確なデザインが最も効果的と判断。 -->
 <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
@@ -17,7 +17,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
         body {
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Noto+Sans+JP', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -42,6 +42,16 @@
                 リリース記念キャンペーン開催中！
             </p>
         </header>
+        
+        <!-- Urgency Badge -->
+        <div class="mb-4 inline-flex items-center space-x-2 bg-yellow-400 text-white text-sm font-bold px-4 py-2 rounded-full shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L10 10.586V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+            </svg>
+            <span>〜9/30(金)まで</span>
+            <span class="ml-2 font-bold text-black">|</span>
+            <span class="ml-2">先着10,000名様限定</span>
+        </div>
 
         <section class="bg-emerald-100/70 border-2 border-emerald-500 rounded-lg p-6 mb-6 shadow-inner">
             <p class="text-lg font-semibold text-emerald-800">
@@ -54,7 +64,7 @@
                 無料でプレゼント！
             </p>
             <p class="text-sm text-gray-600 mt-3">
-                （通常：月3質問）
+                （通常期間：月3質問まで無料）
             </p>
         </section>
 
@@ -68,7 +78,7 @@
         </section>
         
         <footer class="text-left text-xs text-gray-600 space-y-2 border-t pt-4">
-            <p><span class="font-bold">【キャンペーン詳細】</span><br>期間：〜9月30日まで / 対象：先着10,000名様限定</p>
+            <p><span class="font-bold">【キャンペーン詳細】</span><br>期間：〜9月30日(金)まで / 対象：先着10,000名様限定</p>
             <p class="font-medium">リリース記念終了後も<span class="font-bold text-emerald-700">無料</span>でお試しいただけます。月額1,980円で月50質問まで、納得いくまで何度も相談できる有料プランもご用意しています。</p>
             <p class="mt-4 font-semibold text-center text-sm">今すぐ日々の悩みや気になることを相談してみましょう。</p>
         </footer>
