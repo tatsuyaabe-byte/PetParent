@@ -1,11 +1,11 @@
-<!-- Chosen Palette: Calm Harmony -->
-<!-- Application Structure Plan: 無料登録というコンバージョンを最大化するため、単一で完結したポップアップ風のカードデザインを採用。ユーザーの注意を逸らさず、最も重要なオファー（20回無料）とCTA（コールトゥアクション）に視線を誘導する。登録の簡単さ（3分）やキャンペーン後の無料継続オプションを明確に提示し、登録への心理的ハードルを下げる構成とした。限定性を強く訴求するため、「先着1万名」と「9月末まで」という情報をメインオファーの近くに配置し、視覚的な階層を向上させた。 -->
+<!-- Chosen Palette: Warm and Energetic (Orange, Peach, and White with a touch of Gold) -->
+<!-- Application Structure Plan: 飼い主という特定のターゲットに特化するため、親しみやすく温かみのあるデザインを採用。無料提供と限定性を明確に訴求するヒーローセクション、料金プランを分かりやすく提示するセクション、そして行動を促すCTAボタンで構成。シンプルかつ直接的な情報伝達を最優先し、ユーザーが迷わず登録できるように設計した。 -->
 <!-- Visualization & Content Choices: 
-- キャンペーンの主要オファー → 説得 → 大きな文字と対照的な色を持つヒーロー要素 → 視覚的なインパクトで即時認知させる → Tailwind CSS
-- 限定性の強調 → 希少性と緊急性の訴求 → 目立つバッジ形式のテキスト → ユーザーの行動を促すトリガーとする → Tailwind CSS
-- 登録の容易さ → 摩擦の低減 → 明確で簡潔なテキスト → ユーザーの不安を解消する → Tailwind CSS
+- キャンペーンの主要オファー → 説得 → 大きな文字と信頼感のある配色 → 親しみやすさを感じさせながら即時認知させる → Tailwind CSS
+- 限定性の強調 → 希少性と緊急性の訴求 → ゴールドのバッジ形式のテキスト → 親近感のある希少性を演出する → Tailwind CSS
+- 登録の容易さ → 摩擦の低減 → 簡潔な「簡単3分で登録」文言 → 飼い主の負担を軽減する印象を与える → Tailwind CSS
 - CTAボタン → コンバージョン → 明確でアクションを促すボタン → ユーザーの次の行動を導く → Tailwind CSS
-- 確認：このコンテンツはプロモーションが目的なので、複雑な視覚化は不要。ダイレクトレスポンス広告の原則に基づき、階層が明確なデザインが最も効果的と判断。 -->
+- 確認：このコンテンツはプロモーションが目的なので、複雑な視覚化は不要。親しみやすさと効率性を重視したシンプルなデザインが最も効果的と判断。 -->
 <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 <!DOCTYPE html>
 <html lang="ja">
@@ -17,7 +17,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
         body {
-            font-family: 'Noto+Sans+JP', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -30,37 +30,37 @@
         }
     </style>
 </head>
-<body class="bg-emerald-50 flex items-center justify-center min-h-screen p-4">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
 
-    <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl p-6 md:p-8 text-center border-t-4 border-emerald-500">
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl p-6 md:p-8 text-center border-t-4 border-orange-500">
 
         <header class="mb-6">
-            <h1 class="text-2xl md:text-3xl font-extrabold text-emerald-700 mb-2">
+            <h1 class="text-2xl md:text-3xl font-extrabold text-orange-800 mb-2">
                 わたしのAI獣医さん
             </h1>
-            <p class="text-lg font-bold text-rose-500">
-                リリース記念キャンペーン開催中！
+            <p class="text-lg font-bold text-orange-600">
+                世界同時リリース記念<br>日本限定キャンペーン開催中！
             </p>
         </header>
         
         <!-- Urgency Badge -->
-        <div class="mb-4 inline-flex items-center space-x-2 bg-yellow-400 text-white text-sm font-bold px-4 py-2 rounded-full shadow-md">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" viewBox="0 0 20 20" fill="currentColor">
+        <div class="mb-4 inline-flex items-center space-x-2 bg-yellow-600 text-white text-sm font-bold px-4 py-2 rounded-full shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L10 10.586V6a1 1 0 00-1-1z" clip-rule="evenodd" />
             </svg>
-            <span>〜9/30(金)まで</span>
-            <span class="ml-2 font-bold text-black">|</span>
+            <span>〜9/30まで</span>
+            <span class="ml-2 font-bold text-white">|</span>
             <span class="ml-2">先着10,000名様限定</span>
         </div>
 
-        <section class="bg-emerald-100/70 border-2 border-emerald-500 rounded-lg p-6 mb-6 shadow-inner">
-            <p class="text-lg font-semibold text-emerald-800">
-                今、無料登録するだけで
+        <section class="bg-orange-100/70 border-2 border-orange-500 rounded-lg p-6 mb-6 shadow-inner">
+            <p class="text-lg font-semibold text-orange-800">
+                今だけ無料登録で
             </p>
-            <p class="text-3xl md:text-5xl font-black text-rose-600 my-2 tracking-tight">
-                AIへの質問<span class="text-5xl md:text-7xl">20</span>回分
+            <p class="text-3xl md:text-5xl font-black text-orange-600 my-2 tracking-tight">
+                20回分の質問
             </p>
-            <p class="text-lg font-semibold text-emerald-800">
+            <p class="text-lg font-semibold text-orange-800">
                 無料でプレゼント！
             </p>
             <p class="text-sm text-gray-600 mt-3">
@@ -69,7 +69,7 @@
         </section>
 
         <section class="mb-6">
-            <a href="#" class="cta-button w-full inline-block bg-rose-500 text-white text-xl font-bold py-4 px-8 rounded-lg shadow-lg">
+            <a href="#" class="cta-button w-full inline-block bg-orange-500 text-white text-xl font-bold py-4 px-8 rounded-lg shadow-lg">
                 今すぐ無料で試す
             </a>
             <p class="mt-3 text-sm font-semibold text-gray-700">
@@ -78,9 +78,9 @@
         </section>
         
         <footer class="text-left text-xs text-gray-600 space-y-2 border-t pt-4">
-            <p><span class="font-bold">【キャンペーン詳細】</span><br>期間：〜9月30日(金)まで / 対象：先着10,000名様限定</p>
-            <p class="font-medium">リリース記念終了後も<span class="font-bold text-emerald-700">無料</span>でお試しいただけます。月額1,980円で月50質問まで、納得いくまで何度も相談できる有料プランもご用意しています。</p>
-            <p class="mt-4 font-semibold text-center text-sm">今すぐ日々の悩みや気になることを相談してみましょう。</p>
+            <p><span class="font-bold">【キャンペーン詳細】</span><br>期間：〜9月30日まで / 対象：先着10,000名様限定</p>
+            <p class="font-medium">キャンペーン終了後は、月額1,980円で月50質問までご利用いただける有料プランもご用意しています。※無料プランもございます。</p>
+            <p class="mt-4 font-semibold text-center text-sm">この機会に、愛する家族との毎日に"わたしのAI獣医さん"を活用してみませんか？</p>
         </footer>
 
     </div>
